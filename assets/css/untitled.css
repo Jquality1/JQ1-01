@@ -1,0 +1,25 @@
+.bg-container {
+  position: relative;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.bg-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/img/Stoic-04.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.075;
+  z-index: 0;
+}
+
+.bg-container > * {
+  position: relative;
+  z-index: 1;
+}
+
